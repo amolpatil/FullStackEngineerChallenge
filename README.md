@@ -26,13 +26,48 @@ Design a web application that allows employees to submit feedback toward each ot
 * Document all assumptions made
 * Complete solutions aren't required, but what you do submit needs to run.
 
-## How to complete this challenge
-* Fork this repo in github
-* Complete the design and code as defined to the best of your abilities
-* Place notes in your code to help with clarity where appropriate. Make it readable enough to present to the PayPay interview team
-* Complete your work in your own github repo and send the results to us and/or present them during your interview
 
-## What are we looking for? What does this prove?
-* Assumptions you make given limited requirements
-* Technology and design choices
-* Identify areas of your strengths
+# EMS - EMPLOYEE MANAGEMENT SYSTEM
+EMS is employee and their performance management tool
+
+## Assumptions for Admin
+* Admin is a super user and is an employee
+* Admin can create new Admin employees with same rights
+* Admin can Add/remove/update/remove employee
+* Admin can add/update/view perfomance and assign to others
+* if Admin doen't allocate review, it will be assigned to admin by default
+
+## Asumptions for an Employee who is not an Admin
+* List of performance reviews requiring feedback
+* employee can see list of reviews assigned to him/her
+* Submit feedback
+
+## Technology overview
+
+### design and technologies
+![Image of design](https://webimages.mongodb.com/_com_assets/cms/mern-stack-b9q1kbudz0.png)
+
+### Frontend texhnologies
+* [React](https://github.com/facebook/react)
+* [axios](https://github.com/axios/axios)
+* css and media queries
+
+### backend side texhnologies
+* [ExpressJS](https://github.com/expressjs/express)
+* [Bcryptjs](https://github.com/dcodeIO/bcrypt.js)
+* [Jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+* [mongoDB](https://www.mongodb.com/)
+
+## Installations
+* run 'npm install' at root level (for server)
+* Create default.json in config folder at root, replace your username/password for mongodb
+{
+    "mongoURI": "mongodb+srv://<username>:<password>@************?retryWrites=true&w=majority",
+    "jwtSecret" : "putYourSecretKey"
+}
+* run 'npm install' at client folder ( for frontend)
+
+##Demo
+* Admin user is created as a seed entry for first time when code is run
+* john.doe@ems.com/admin@123
+
