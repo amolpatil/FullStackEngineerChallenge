@@ -44,10 +44,10 @@ EMS is employee and their performance management tool
 
 ## Technology overview
 
-### design and technologies
+### Design and technologies
 ![Image of design](https://webimages.mongodb.com/_com_assets/cms/mern-stack-b9q1kbudz0.png)
 
-### Frontend texhnologies
+### Frontend technologies
 * [React](https://github.com/facebook/react)
 * [axios](https://github.com/axios/axios)
 * css and media queries
