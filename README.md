@@ -66,6 +66,7 @@ EMS is employee and their performance management tool
     "jwtSecret" : "putYourSecretKey"
 }
 * run 'npm install' at client folder ( for frontend)
+* at root run 'npm run dev' to start server
 
 ##Demo
 * Admin user is created as a seed entry for first time when code is run
